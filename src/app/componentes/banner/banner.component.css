@@ -1,0 +1,10 @@
+#cmpBanner{
+    height: 280px;
+    border: solid rgb(24, 23, 23) 1px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+/*
+#imgBanner{
+    height: 280px;
+}*/

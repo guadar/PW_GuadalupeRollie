@@ -1,0 +1,7 @@
+#barraSuperior{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        border-radius: 5px;
+}
