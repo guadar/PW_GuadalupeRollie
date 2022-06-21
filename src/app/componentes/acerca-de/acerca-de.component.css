@@ -1,0 +1,45 @@
+
+.miFoto{
+    border-radius: 150px;
+    position: absolute;
+    
+}
+
+/* para laptops y desktops*/
+@media only screen and (max-width:1600px) {
+   .miFoto{
+    width: 10%;
+    top:250px;
+   } 
+}
+/* para laptops */
+@media only screen and (max-width:960px) {
+    .miFoto{
+     width: 10%;
+     top:280px;
+    } 
+ }
+
+ /*para tablets */
+ @media only screen and (max-width:720px) {
+    .miFoto{
+     width: 15%;
+     top:270px;
+    } 
+ }
+
+ /* para celulares */
+ @media only screen and (max-width:540px) {    
+        .miFoto{
+     width: 20%;
+     top:260px;
+    } 
+    .nombre_presentacion{
+        display: block;
+    }
+ }
+
+.nombre_presentacion{
+    margin-top: 80px;
+}
+
