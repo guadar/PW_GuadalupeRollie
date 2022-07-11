@@ -10,6 +10,10 @@ import { BannerComponent } from './componentes/banner/banner.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { LaboralComponent } from './componentes/laboral/laboral.component';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
+//importa componente para hacer barras de progreso circular
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,13 @@ import { LaboralComponent } from './componentes/laboral/laboral.component';
     LoginComponent,
     AcercaDeComponent,
     LaboralComponent,
+    EducacionComponent,
+    HabilidadesComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({}),
   ],
   providers: [],
   bootstrap: [AppComponent]
