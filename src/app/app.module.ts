@@ -14,6 +14,7 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 //importa componente para hacer barras de progreso circular
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { TituloSeccionComponent } from './componentes/compartido/titulo-seccion/titulo-seccion.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     LaboralComponent,
     EducacionComponent,
     HabilidadesComponent,
+    TituloSeccionComponent,
   ],
   imports: [
     BrowserModule,

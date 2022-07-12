@@ -1,6 +1,7 @@
 .nombreHabilidad{
     text-align: center;
-    border: solid black 2px;
+    border: solid #d3d3d4 2px;
+    border-radius: 5px;
 }
 
 .habilidad{
