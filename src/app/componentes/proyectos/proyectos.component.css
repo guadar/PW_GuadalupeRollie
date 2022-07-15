@@ -1,0 +1,10 @@
+.container{
+    margin-top: 50px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    border-top-color: white;
+}
