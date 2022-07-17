@@ -39,6 +39,22 @@
     }
  }
 
+ @media only screen and (max-width:450px) {    
+.contenedorAcercaDe{
+    display: block;
+    text-align: center;
+}
+.miFoto{
+position:inherit;
+ width: 30%;
+ /*top:230px;*/
+} 
+.nombre_presentacion{
+    display: block;
+}
+}
+
+
 .nombre_presentacion{
     margin-top: 80px;
 }
