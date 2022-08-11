@@ -1,0 +1,44 @@
+<h4>Iniciar Sesión</h4>
+<form [formGroup]=form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+    <div class="mb-3">
+      <label for="nombreUsuario" class="form-label">Usuario</label>
+      <input type="text" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="nombreUsuario" class="form-control" aria-describedby="emailHelp" 
+      formControlName="cnombreUsuario"
+      [ngClass]="{'is-invalid': cnombreUsuario?.errors && cnombreUsuario?.touched, 
+      'is-valid': !cnombreUsuario?.errors && cnombreUsuario?.touched}"
+      />
+    </div>
+
+  <!--Este div se va a mostrar dependiendo del resultado de la validacion-->
+  <div *ngIf="cnombreUsuario?.errors && cnombreUsuario?.touched">
+    <p *ngIf="cnombreUsuario?.hasError('required')" class="text-danger">
+      El usuario es requerido
+    </p>
+  </div>
+
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" name="password" formControlName="cpassword" 
+      [(ngModel)]="password" pattern=".{4,}"
+      [ngClass]="{'is-invalid': cpassword?.errors && cpassword?.touched, 
+      'is-valid': !cpassword?.errors && cpassword?.touched}"
+       />
+    </div>
+
+
+     <!--Este div se va a mostrar dependiendo del resultado de la validacion-->
+     <div *ngIf="cpassword?.errors && cpassword?.touched">
+      <p *ngIf="cpassword?.hasError('required')" class="text-danger">
+        Debe ingresar una contraseña
+      </p>
+      <p *ngIf="cpassword?.errors" class="text-danger">
+        La contraseña debe tener una longitud mínima de 4 caracteres
+      </p>
+  </div>
+    
+    <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Ingresar</button>
+
+    <!--3.14-->
+  </form>
+  <!--https://code.tutsplus.com/es/tutorials/angular-form-validation-with-reactive-and-template-driven-forms--cms-32131-->
+  <!--https://angular.io/api/forms/NgModel-->

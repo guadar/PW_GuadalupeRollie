@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { LoginComponent } from './componentes/login/login.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 
 const routes: Routes = [
-  {path:'portfolio', component:PortfolioComponent},
-  {path:'iniciar-sesion', component:IniciarSesionComponent},
-  {path:'', redirectTo:'iniciar-sesion', pathMatch:'full'}
+  {path:'persona/perfil', component:PortfolioComponent},
+  {path:'login', component:LoginComponent},
+  {path:'', redirectTo:'persona/perfil', pathMatch:'full'}
 ];
+//MODIFICAR
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
