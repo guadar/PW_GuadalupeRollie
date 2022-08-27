@@ -16,6 +16,9 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+//import { LoginComponent } from './componentes/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -36,9 +39,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
