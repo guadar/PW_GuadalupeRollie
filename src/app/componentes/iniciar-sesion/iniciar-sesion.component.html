@@ -1,6 +1,6 @@
 <h4>Iniciar Sesión</h4>
 <!--<form [formGroup]="form" class="formLogin" (ngSubmit)="onEnviar($event)">-->
-  <form [formGroup]="form" class="formLogin">
+  <form [formGroup]="fGLogin" class="formLogin">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">E-mail</label>
       <input type="email" formControlName="email" 
@@ -42,5 +42,5 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>-->
-    <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Enviar</button>
+    <button type="submit" class="btn btn-primary" [disabled]="!fGLogin.valid">Enviar</button>
   </form>
