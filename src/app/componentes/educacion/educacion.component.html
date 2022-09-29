@@ -1,1 +1,23 @@
-<p>educacion works!</p>
+<div class="container contenedorEducacion">
+    <app-titulo-seccion [denominacionSeccion]="'Estudios'"></app-titulo-seccion>
+     <div>
+         <ul class="list-group">
+            
+             <li class="list-group-item list-group-item-dark" *ngFor="let estudio of persona.listaEstudio">
+                 <div class="row">
+                     <div class="col-md-2">
+                         <img src="/assets/imagenes/encabezado/img_argPrograma.png" class="img-fluid fotoEmpresa" alt="Mi Foto">
+                     </div>
+                     <div class="col-md-10">
+                         <h5>{{estudio.nombre}}</h5>
+                         <h6 class="fechaInicio">Inicio de cursado: {{estudio.anioInicioCursado}}</h6> <h6 class="tipoEstudio">{{estudio.tipoEstudio.nombre}}</h6>
+                         <p>Establecimiento: {{estudio.entidadEducativa.nombre}} - Teléfono: {{estudio.entidadEducativa.telefono}} 
+                            - Ciudad: {{estudio.entidadEducativa.domicilio.localidad.nombre}} ({{estudio.entidadEducativa.domicilio.localidad.provincia.nombre}})
+                         </p>
+                     </div>
+                 </div>
+             </li>
+  
+           </ul>
+     </div>
+ </div>

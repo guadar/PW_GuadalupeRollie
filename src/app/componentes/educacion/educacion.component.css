@@ -1,0 +1,15 @@
+.contenedorEducacion{
+    margin-top: 50px;
+}
+
+.row{
+    align-items: center;
+}
+
+.fechaInicio {
+    display: inline;
+    margin-right: 10px;
+}
+.tipoEstudio{
+    display: inline;
+}

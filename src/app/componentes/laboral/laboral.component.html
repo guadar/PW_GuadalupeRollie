@@ -3,13 +3,13 @@
     <div>
         <ul class="list-group">
            
-            <li class="list-group-item list-group-item-dark">
+            <li class="list-group-item list-group-item-dark" *ngFor="let estudio of persona.listaEstudio">
                 <div class="row">
                     <div class="col-md-2">
                         <img src="/assets/imagenes/encabezado/img_argPrograma.png" class="img-fluid fotoEmpresa" alt="Mi Foto">
                     </div>
                     <div class="col-md-10">
-                        <h5>Nombre Empresa</h5>
+                        <h5>{{estudio.nombre}}</h5>
                         <h6 class="puesto">Título del puesto</h6> <h6 class="periodoTrabajado">Fecha desde-hasta</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt assumenda dolorum! Amet dicta, saepe sed excepturi cum quae veritatis!</p>
                     </div>
