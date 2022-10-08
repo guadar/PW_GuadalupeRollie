@@ -3,28 +3,15 @@
     <div>
         <ul class="list-group">
            
-            <li class="list-group-item list-group-item-dark" *ngFor="let estudio of persona.listaEstudio">
+            <li class="list-group-item list-group-item-dark" *ngFor="let empleo of persona.listaEmpleos">
                 <div class="row">
                     <div class="col-md-2">
                         <img src="/assets/imagenes/encabezado/img_argPrograma.png" class="img-fluid fotoEmpresa" alt="Mi Foto">
                     </div>
                     <div class="col-md-10">
-                        <h5>{{estudio.nombre}}</h5>
-                        <h6 class="puesto">Título del puesto</h6> <h6 class="periodoTrabajado">Fecha desde-hasta</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt assumenda dolorum! Amet dicta, saepe sed excepturi cum quae veritatis!</p>
-                    </div>
-                </div>
-            </li>
-
-            <li class="list-group-item list-group-item-dark">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img src="/assets/imagenes/encabezado/img_argPrograma.png" class="img-fluid fotoEmpresa" alt="Mi Foto">
-                    </div>
-                    <div class="col-md-10">
-                        <h5>Nombre Empresa</h5>
-                        <h6 class="puesto">Título del puesto</h6> <h6 class="periodoTrabajado">Fecha desde-hasta</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt assumenda dolorum! Amet dicta, saepe sed excepturi cum quae veritatis!</p>
+                        <h5>{{empleo.nombreEmpresa}}</h5>
+                        <h6 class="puesto">{{empleo.tipoEmpleo.nombre}}</h6> <h6 class="periodoTrabajado"> {{empleo.fechaInicio}} - {{empleo.fechaFin}}</h6>
+                        <p>{{empleo.descripcion}}</p>
                     </div>
                 </div>
             </li>

@@ -1,4 +1,6 @@
+import { Empleo } from "./empleo";
 import { Estudio } from "./estudio";
+import { Habilidad } from "./habilidad";
 
 export class Persona {
     id? : number;
@@ -10,4 +12,6 @@ export class Persona {
     sobreMi! : string;
     urlFoto! : string;
     listaEstudio! : Estudio[];
+    listaEmpleos!:Empleo[];
+    listaHabilidades!:Habilidad[];
 }

@@ -3,10 +3,10 @@
        
        <app-titulo-seccion [denominacionSeccion]="'Habilidades'"></app-titulo-seccion>
 
-        <div class="col-md-4 habilidad">
+        <div class="col-md-4 habilidad" *ngFor="let habilidad of persona.listaHabilidades">
            
-            <circle-progress class="avance"
-            [percent]="50"
+            <circle-progress class="avance" *ngIf="habilidad.tipoHabilidad.nombre=='Duras'"
+            [percent]=habilidad.gradoDominio
             [radius]="70"
             [outerStrokeWidth]="11"
             [innerStrokeWidth]="8"
@@ -16,87 +16,20 @@
             [animationDuration]="300"
             >
             </circle-progress>
-            <h5 class="nombreHabilidad">CSS</h5>
+            <circle-progress class="avance" *ngIf="habilidad.tipoHabilidad.nombre=='Blandas'"
+            [percent]=habilidad.gradoDominio
+            [radius]="70"
+            [outerStrokeWidth]="11"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#BA7F90'"
+            [innerStrokeColor]="'#FDD8E3'"
+            [animation]="true"
+            [animationDuration]="300"
+            >
+            </circle-progress>
+            <h5 class="nombreHabilidad">{{habilidad.nombre}}</h5>
         </div>
 
-        <div class="col-md-4 habilidad">
-           
-            <circle-progress class="avance"
-            [percent]="65"
-            [radius]="70"
-            [outerStrokeWidth]="11"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#900C3F'"
-            [innerStrokeColor]="'#F08080'"
-            [animation]="true"
-            [animationDuration]="300"
-            >
-            </circle-progress>
-            <h5 class="nombreHabilidad">HTML</h5>
-        </div>
-
-        <div class="col-md-4 habilidad">
-           
-            <circle-progress class="avance"
-            [percent]="40"
-            [radius]="70"
-            [outerStrokeWidth]="11"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#900C3F'"
-            [innerStrokeColor]="'#F08080'"
-            [animation]="true"
-            [animationDuration]="300"
-            >
-            </circle-progress>
-            <h5 class="nombreHabilidad">Bootstrap</h5>
-        </div>
-
-        <div class="col-md-4 habilidad">
-           
-            <circle-progress class="avance"
-            [percent]="30"
-            [radius]="70"
-            [outerStrokeWidth]="11"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#900C3F'"
-            [innerStrokeColor]="'#F08080'"
-            [animation]="true"
-            [animationDuration]="300"
-            >
-            </circle-progress>
-            <h5 class="nombreHabilidad">TypeScript</h5>
-        </div>
-
-        <div class="col-md-4 habilidad">
-           
-            <circle-progress class="avance"
-            [percent]="100"
-            [radius]="70"
-            [outerStrokeWidth]="11"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#900C3F'"
-            [innerStrokeColor]="'#F08080'"
-            [animation]="true"
-            [animationDuration]="300"
-            >
-            </circle-progress>
-            <h5 class="nombreHabilidad">Trabajo en Equipo</h5>
-        </div>
-
-        <div class="col-md-4 habilidad">
-           
-            <circle-progress class="avance"
-            [percent]="100"
-            [radius]="70"
-            [outerStrokeWidth]="11"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#900C3F'"
-            [innerStrokeColor]="'#F08080'"
-            [animation]="true"
-            [animationDuration]="300"
-            >
-            </circle-progress>
-            <h5 class="nombreHabilidad">Responsabilidad</h5>
-        </div>
+       
     </div>
 </div>
