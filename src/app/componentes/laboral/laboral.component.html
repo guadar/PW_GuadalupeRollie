@@ -1,6 +1,18 @@
+<!--
+    https://www.javaguides.net/2019/06/navigate-to-another-page-with-button-in-angular.html
+-->
+
 <div class="container contenedorLaboral">
    <app-titulo-seccion [denominacionSeccion]="'Experiencia Laboral'"></app-titulo-seccion>
-    <div>
+   
+
+   <div class="btn-group" role="group" aria-label="Basic example">
+        <button id="nuevo" type="button" class="btn btn-secondary bi bi-file-earmark-plus"> Nuevo</button>
+        <button id="modificar" type="button" class="btn btn-secondary bi bi-pencil-square" (click)="clickModificar()"> Editar</button>
+        <button id="eliminar" type="button" class="btn btn-secondary bi bi-file-earmark-minus"> Eliminar</button>
+   </div> 
+   
+   <div>
         <ul class="list-group">
            
             <li class="list-group-item list-group-item-dark" *ngFor="let empleo of persona.listaEmpleos">

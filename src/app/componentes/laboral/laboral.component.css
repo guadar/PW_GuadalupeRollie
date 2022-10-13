@@ -13,3 +13,11 @@
 .periodoTrabajado{
     display: inline;
 }
+
+.btn-group{
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    justify-self: stretch;
+    text-align: end;    
+}

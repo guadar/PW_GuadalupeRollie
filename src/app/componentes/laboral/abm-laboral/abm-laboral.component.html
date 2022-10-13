@@ -1,0 +1,56 @@
+<!--https://www.w3schools.com/html/html_forms.asp
+    https://www.w3schools.com/html/html_form_input_types.asp
+
+    https://getbootstrap.esdocu.com/docs/5.1/forms/overview/
+-->
+<div class="container">
+    <h1 class="display-3">Información Laboral</h1>
+    <br>
+    <br>
+
+    <form>
+        <div class="form-group mb-3">
+            <label for="txtEmpresa" class="d-block form-label h6">Nombre de la Empresa</label>
+            <input type="text" id="txtEmpresa" name="txtEmpresa" class="w-75">
+        </div>
+        <label class="form-label h6">Período Trabajado</label>
+        <div class="row">
+            <div class="form-group mb-3 col-3">
+                <label class="form-label d-block" for="dtFechaInicio">Desde</label>
+                <input type="date" id="dtFechaInicio" name="dtFechaInicio">
+            </div>
+            <div class="form-group mb-3 col-3">
+                <label class="form-label d-block" for="dtFechaFin">Hasta</label>
+                <input type="date" id="dtFechaFin" name="dtFechaFin">
+            </div>
+        </div>
+
+        <label class="form-label h6">¿Es su trabajo actual?</label><br>
+        <div class="form-check form-check-inline mb-3">
+            <input type="radio" class="form-check-input" id="rdsi" name="rdTrabajoActual" value="si">
+            <label class="form-check-label" for id="rdsi">Si</label>
+        </div>
+        <div class="form-check form-check-inline mb-3">
+            <input type="radio" class="form-check-input" id="rdno" name="rdTrabajoActual" value="no">
+            <label class="form-check-label" for="rdno">No</label>
+        </div>
+        <div class="form-group mb-3">
+            <label class="d-block form-label h6" for="txtDescripcion">Tareas realizadas</label>
+            <textarea id="txtDescripcion" name="txtDescripcion" rows="5" class="w-75"></textarea>
+        </div>
+        <label class="form-label h6">Seleccione el tipo correspondiente</label><br>
+        <div class="form-check mb-3">
+
+            <input type="checkbox" class="form-check-input" id="chbFullTime" name="chbTipoEmpleo" value="FullTime">
+            <label class="form-check-label" for="chbFullTime">Full Time</label><br>
+            <input type="checkbox" class="form-check-input" id="chbPartTime" name="chbTipoEmpleo" value="PartTime">
+            <label class="form-check-label" for="chbPartTime">Tiempo Parcial</label><br>
+            <input type="checkbox" class="form-check-input" id="chbPresencial" name="chbTipoEmpleo" value="Presencial">
+            <label class="form-check-label" for="cbPresencial">Presencial</label><br>
+            <input type="checkbox" class="form-check-input" id="chbVirtual" name="chbTipoEmpleo" value="Virtual">
+            <label class="form-check-label" for="chbVirtual">Virtual</label>
+        </div>
+
+    </form>
+
+</div>

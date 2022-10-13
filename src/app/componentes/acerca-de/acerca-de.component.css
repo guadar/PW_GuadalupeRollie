@@ -1,6 +1,6 @@
 
 .miFoto{
-    border-radius: 150px;
+  /*  border-radius: 150px;*/
     position: absolute;
     
 }
@@ -23,7 +23,7 @@
  /*para tablets */
  @media only screen and (max-width:720px) {
     .miFoto{
-     width: 15%;
+    width: 15%;
      top:270px;
     } 
  }

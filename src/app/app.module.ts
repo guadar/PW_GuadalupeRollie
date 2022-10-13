@@ -17,6 +17,7 @@ import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-ses
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AbmLaboralComponent } from './componentes/laboral/abm-laboral/abm-laboral.component';
 //import { LoginComponent } from './componentes/login/login.component';
 
 
@@ -33,6 +34,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     FooterComponent,
     IniciarSesionComponent,
     PortfolioComponent,
+    AbmLaboralComponent,
 
   ],
   imports: [
